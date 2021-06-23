@@ -1,10 +1,6 @@
 def multiply(a, b)
-  if a != 0 and b != 0
-    return b if b == 0
-    a + multiply(a, b-1)
-  else
-    return 0
-  end
+  return 0 if a ==0 || b == 0
+  a + multiply(a, b-1)
 end
 
-puts(multiply(25, 2))
+puts(multiply(25, 25))
